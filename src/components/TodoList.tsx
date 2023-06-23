@@ -1,6 +1,5 @@
-import * as React from "react";
-import { Button, Input, Flex, Checkbox, Heading } from "@chakra-ui/react";
-import { useAtom } from "jotai";
+import { Button, Input, Flex, Checkbox, Heading } from '@chakra-ui/react';
+import { useAtom } from 'jotai';
 
 import {
   Todo,
@@ -8,7 +7,7 @@ import {
   updateTodoAtom,
   removeTodoAtom,
   toggleTodoAtom,
-} from "../store";
+} from '../store';
 
 function TodoListItems() {
   const [todos] = useAtom(todosAtom);

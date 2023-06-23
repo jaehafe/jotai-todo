@@ -3,13 +3,9 @@ import { Button, Grid } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { useAtom } from 'jotai';
 
-import { Todo, todosAtom } from '../store';
+import { todosAtom } from '../store';
 
 function TopBar() {
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [isError, setIsError] = React.useState(false);
-  const [todos, setTodos] = React.useState([]);
-
   const [, todosSet] = useAtom(todosAtom);
 
   // const onLoad = () => {
